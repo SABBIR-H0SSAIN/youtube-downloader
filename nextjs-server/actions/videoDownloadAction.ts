@@ -40,8 +40,7 @@ export const videoDownloadAction = async (
         )
       )
     );
-    // const languages =Array.from(new Set(formatsData.filter((format: any) => format.language).map((format: any) => format.language)));
-    // console.log(languages)
+    
     const details = {
       id: videoInfo.basic_info.id,
       url: videoInfo.basic_info.url_canonical,
@@ -51,7 +50,6 @@ export const videoDownloadAction = async (
       duration: videoInfo.basic_info.duration,
       views: videoInfo.basic_info.view_count,
       formats: formats,
-      // languages: languages,
     };
 
     return {
